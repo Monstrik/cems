@@ -16,7 +16,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
-import { AlertService, AuthenticationService, UserService } from './_services/index';
+import { AlertService, CauthenticationService, AuthenticationService, UserService } from './_services/index';
 
 import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
@@ -32,6 +32,7 @@ import {Form800Component} from './form800/form800.component';
 import {HelpComponent} from './help/help.component';
 
 import {AgencyService} from './_services/agency.service';
+import { CloginComponent } from './clogin/clogin.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import {AgencyService} from './_services/agency.service';
         BlsComponent,
         AlsComponent,
         Form800Component,
-        HelpComponent
+        HelpComponent,
+        CloginComponent
     ],
     imports: [
         BrowserModule,
@@ -60,6 +62,7 @@ import {AgencyService} from './_services/agency.service';
         AuthGuard,
         AlertService,
         AuthenticationService,
+        CauthenticationService,
         UserService,
 
         // providers used to create fake backend

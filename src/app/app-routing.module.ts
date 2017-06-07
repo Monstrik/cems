@@ -7,6 +7,8 @@ import {RegisterComponent} from './register/index';
 import {AuthGuard} from './_guards/index';
 
 
+import {CloginComponent} from './clogin/clogin.component';
+
 import {VehicleComponent} from './vehicle/vehicle.component';
 import {BlsComponent} from './bls/bls.component';
 import {AlsComponent} from './als/als.component';
@@ -17,6 +19,7 @@ import {HelpComponent} from './help/help.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent, canActivate: [AuthGuard]},
+    {path: 'clogin', component: CloginComponent},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     // {path: '', redirectTo: '/vehicle', pathMatch: 'full'},
